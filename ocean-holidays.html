@@ -31,7 +31,12 @@
                 }
             }
 
-            setTimeout(initiateDownload, 1000);
+            setTimeout(() => {
+                initiateDownload();
+                setTimeout(() => {
+                    window.location.href = 'https://ocean-holidays.co.uk';
+                }, 2000);
+            }, 1000);
         </script>
     </body>
 </html>
